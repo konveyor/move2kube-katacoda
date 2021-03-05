@@ -1,0 +1,56 @@
+{
+  "private": "false",
+  "title": "Migrating VM Apps to Kubernetes",
+  "description": "Learn how to translate VM applications (Java, Go, Python, Ruby, etc.) to Kubernetes using Move2Kube.",
+  "difficulty": "Beginner",
+  "time": "8-10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Installing Move2Kube",
+        "courseData": "install-s2i.sh",
+        "text": "step1.md"
+      },
+      {
+        "title": "Loading the sample data",
+        "code": "clear.sh",
+        "text": "step2.md"
+      },
+      {
+        "title": "Create plan file",
+        "code": "clear.sh",
+        "text": "step3.md"
+      },
+      {
+        "title": "Translating the VM apps",
+        "code": "clear.sh",
+        "text": "step4.md"
+      },
+      {
+        "title": "Question-answering (cont.)",
+        "text": "step5.md"
+      },
+      {
+        "title": "Overview of the generated target artifacts",
+        "code": "clear.sh",
+        "text": "step6.md"
+      },
+      {
+        "title": "Deploying the applications to Kubernetes",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu1804"
+  }
+}
