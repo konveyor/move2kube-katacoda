@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> a86dae7... feat: Add Katacoda scenario for docker-compose to K8s
