@@ -1,29 +1,39 @@
 Move2Kube is now going through the source artifacts and creating a *plan* internally. It comes back to you and asks questions when it has some doubts.
 
+For each question the method of interaction is provided with the question. Accordingly, use arrows <kbd>&#8593;</kbd>/<kbd>&#8595;</kbd> to move, <kbd>Space</kbd> to check/uncheck the options, and <kbd>Return</kbd> or <kbd>Enter</kbd> to submit your input.
+
 Let's go over the questions now.
 
 ```
 ? Select all services that are needed
-[✓]  web
 ```
+```
+web
+```{{execute}}
 Here, we go ahead with the web service.
 
 ```
 ? Choose the artifact type:
-> Yamls
 ```
+```
+Yamls
+```{{execute}}
 It's asking whether you want Helm charts, Yamls or Knative artifacts? Let's go ahead with Yamls.
 
 ```
 ? Choose the cluster type:
-> Kubernetes
 ```
+```
+Kubernetes
+```{{execute}}
 Now, it asks to select the cluster type you want to deploy to. We will deploy to Kubernetes cluster.
 
 ```
 ? Select all services that should be exposed:
-[✓]  web
 ```
+```
+web
+```{{execute}}
 Here you can select the services which need to be exposed. We want to expose the web service.
 
 ```
@@ -34,24 +44,27 @@ Specify the URL/path for the web service. Press the <kbd>Enter</kbd> or <kbd>ret
 
 ```
 ? [] What type of container registry login do you want to use? 
-> Use existing pull secret
 ```
+```
+Use existing pull secret
+```{{execute}}
 Now it asks about the type of container registry login.
 
 ```
 ? [] Enter the name of the pull secret : 
 ```
-
-Then, it asks about the name of the pull secret `all-icr-io`{{execute}}.
+```
+all-icr-io
+```{{execute}}
+Then, it asks about the name of the pull secret.
 
 ```
-? Provide the ingress host domain
-
-It is now asking for the ingress hosting domain. It can be grabbed for the cluster you are going to deploy to. In case of IBM Cloud Container Service, this is what we are using from our Kubernetes cluster. 
+? Provide the ingress host domain 
 ```
-`irlhc12-cf7808d3396a7c1915bd1818afbfb3c0-0000.us-south.containers.appdomain.cloud`{{execute}}
-
-The ingress hosting domain will differ based on the cluster you are fetching from.
+```
+irlhc12-cf7808d3396a7c1915bd1818afbfb3c0-0000.us-south.containers.appdomain.cloud
+```{{execute}}
+It is now asking for the ingress hosting domain. It can be grabbed for the cluster you are going to deploy to. In case of IBM Cloud Container Service, this is what we are using from our Kubernetes cluster. The ingress hosting domain will differ based on the cluster you are fetching from.
 
 ```
 ? Provide the TLS secret for ingress 

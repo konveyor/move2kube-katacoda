@@ -1,7 +1,7 @@
 {
   "private": "false",
-  "title": "Migrating VM Apps to Kubernetes",
-  "description": "Learn how to translate VM applications (Java, Go, Python, Ruby, etc.) to Kubernetes using Move2Kube.",
+  "title": "Migrating Polyglot App to Kubernetes",
+  "description": "Learn how to translate a Polyglot application having multiple components written in different languages (Java, Go, Python, Ruby, etc.) to Kubernetes using Move2Kube.",
   "difficulty": "Beginner",
   "time": "8-10 minutes",
   "details": {
@@ -22,7 +22,7 @@
         "text": "step3.md"
       },
       {
-        "title": "Translating the VM apps",
+        "title": "Translating a Polyglot application",
         "code": "clear.sh",
         "text": "step4.md"
       },
@@ -51,6 +51,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu1804"
+    "imageid": "kubernetes-cluster-running:1.18"
   }
 }

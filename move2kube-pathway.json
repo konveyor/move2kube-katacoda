@@ -9,8 +9,8 @@
     },
     {
       "course_id": "language-platforms-to-kubernetes",
-      "title": "Migrating VM Apps to Kubernetes",
-      "description": "Learn how to translate VM applications (Java, Go, Node.js, Ruby, etc.) to Kubernetes"
+      "title": "Migrating a Polyglot App to Kubernetes",
+      "description": "Learn how to translate a Polyglot application, having multiple components written in Java, Go, Node.js, Ruby, etc., to Kubernetes"
     }
   ]
 }
