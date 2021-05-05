@@ -3,11 +3,12 @@
   "title": "Migrating Docker Compose Apps to Kubernetes",
   "description": "Learn how to migrate and deploy Docker Compose/Swarm Apps to Kubernetes using Move2Kube.",
   "difficulty": "Beginner",
-  "time": "5-10 minutes",
+  "time": "7-10 minutes",
   "details": {
     "steps": [
       {
         "title": "Installing Move2Kube",
+        "courseData": "install-prerequisites.sh",
         "text": "step1.md"
       },
       {
@@ -31,6 +32,7 @@
       },
       {
         "title": "Deploying the application to Kubernetes",
+        "code": "clear.sh",
         "text": "step6.md"
       }
     ],
@@ -42,9 +44,11 @@
     }
   },
   "environment": {
+    "hideHiddenFiles": true,
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu1804"
+    "port": 30000,
+    "imageid": "minikube-running:1.20"
   }
 }

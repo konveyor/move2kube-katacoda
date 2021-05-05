@@ -6,11 +6,6 @@
       "course_id": "docker-compose-to-kubernetes",
       "title": "Migrating Docker Compose/Swarm Apps to Kubernetes",
       "description": "Learn how to translate Docker compose file to Kubernetes artifacts"
-    },
-    {
-      "course_id": "language-platforms-to-kubernetes",
-      "title": "Migrating a Polyglot App to Kubernetes",
-      "description": "Learn how to translate a Polyglot application, having multiple components written in Java, Go, Node.js, Ruby, etc., to Kubernetes"
     }
   ]
 }
