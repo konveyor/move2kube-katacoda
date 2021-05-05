@@ -1,0 +1,11 @@
+{
+  "title": "Migrating Apps to Kubernetes using Move2Kube",
+  "description": "Learn how to migrate and deploy your applications to Kubernetes using Move2Kube",
+  "courses": [
+    {
+      "course_id": "docker-compose-to-kubernetes",
+      "title": "Migrating Docker Compose/Swarm Apps to Kubernetes",
+      "description": "Learn how to translate Docker compose file to Kubernetes artifacts"
+    }
+  ]
+}
