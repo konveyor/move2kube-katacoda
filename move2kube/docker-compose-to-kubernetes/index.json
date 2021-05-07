@@ -1,5 +1,4 @@
 {
-  "private": "false",
   "title": "Migrating Docker Compose Apps to Kubernetes",
   "description": "Learn how to migrate and deploy Docker Compose/Swarm Apps to Kubernetes using Move2Kube.",
   "difficulty": "Beginner",
