@@ -1,0 +1,45 @@
+move2kube:
+  target:
+    imageregistry:
+      namespace: move2kube
+      url: quay.io
+    ingress:
+      tls: ""
+  transformers:
+    types:
+      - WinSLWebApp-Dockerfile
+      - Parameterizer
+      - Tomcat
+      - Tekton
+      - ClusterSelector
+      - EarAnalyser
+      - Nodejs-Dockerfile
+      - Liberty
+      - WinWebApp-Dockerfile
+      - Maven
+      - KubernetesVersionChanger
+      - ZuulAnalyser
+      - Kubernetes
+      - Jar
+      - Jboss
+      - DockerfileImageBuildScript
+      - DockerfileDetector
+      - Rust-Dockerfile
+      - ComposeAnalyser
+      - Buildconfig
+      - DotNetCore-Dockerfile
+      - EarRouter
+      - Python-Dockerfile
+      - ComposeGenerator
+      - Gradle
+      - WarAnalyser
+      - Golang-Dockerfile
+      - Ruby-Dockerfile
+      - ContainerImagesPushScriptGenerator
+      - WinConsoleApp-Dockerfile
+      - PHP-Dockerfile
+      - ReadMeGenerator
+      - CloudFoundry
+      - WarRouter
+      - DockerfileParser
+      - Knative

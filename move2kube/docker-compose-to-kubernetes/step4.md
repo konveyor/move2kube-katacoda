@@ -2,7 +2,9 @@ Move2Kube is now going through the source artifacts and creating a *plan* intern
 
 For each question the method of interaction is provided with the question. Accordingly, use arrows <kbd>&#8593;</kbd>/<kbd>&#8595;</kbd> to move, <kbd>Space</kbd> to check/uncheck the options, and <kbd>Return</kbd> or <kbd>Enter</kbd> to submit your input.
 
-Let's go over the questions now.
+We have already answered some of the questions in the `config.yaml`{{open}} and we provided this config file as input to Move2Kube using `-f` flag while running `move2kube transform` in the Step 4.
+
+Let's go over the remaining questions now. (Please note that the order of appearance of the questions in the Terminal may be slightly different from what is mentioned below.)
 
 ```
 ? Select all services that are needed
@@ -21,24 +23,26 @@ Kubernetes
 Now, it asks to select the cluster type you want to deploy to. We will deploy to Kubernetes cluster.
 
 ```
-? Select all services that should be exposed:
+? What URL/path should we expose the service web on?
+(/web)
 ```
 ```
-web
-```{{execute}}
-Here you can select the services which need to be exposed. We want to expose the web service.
-
-```
-? What URL/path should we expose the service web on? 
-(/)
-```
-```
-/
+/web
 ```{{execute}}
 Specify the URL/path for the web service. Press the <kbd>Enter</kbd> or <kbd>return</kbd> key and let's go ahead with the default path which is "/".
 
 ```
-? [] What type of container registry login do you want to use? 
+? Provide the minimum number of replicas each service should have
+Hints:
+[If the value is 0 pods won't be started by default]
+```
+```
+2
+```{{execute}}
+Let’s go ahead with the 2 replicas for each service.
+
+```
+? [] What type of container registry login do you want to use?
 ```
 ```
 No authentication
@@ -46,18 +50,13 @@ No authentication
 Now it asks about the type of container registry login.
 
 ```
-? Provide the ingress host domain 
+? Provide the ingress host domain
 ```
 ```
 dc.example.com
 ```{{execute}}
 It is now asking for the ingress hosting domain. It can be grabbed for the cluster you are going to deploy to.
 
-```
-? Provide the TLS secret for ingress 
-``` 
-Now we will go ahead with the default for the TLS secret (by pressing the <kbd>return</kbd> key)
-
-The translation is successful and the target artifacts can be found inside the `myapp` folder.
+The transformation is successful and the target artifacts can be found inside the `myapp` folder.
 
 In the next step we will provide an overview of the generated target artifacts.
