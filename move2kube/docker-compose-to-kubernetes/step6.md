@@ -5,14 +5,16 @@ Now, let's deploy the application to the Kubernetes cluster using the yamls gene
 
 ```
 cd myapp
-./scripts/deploy.sh
+kubectl apply -f deploy/yamls
 ```{{execute}}
 
-Let's check the status of pods
+Let's check the status of pods. It may take few minutes for the pods to become ready.
 
 ```
-kubectl get pods
+kubectl get pods -w
 ```{{execute}}
+
+Once the pods status changes from `ContainerCreating` to `Running`, click here `^C`{{execute ctrl-seq}}.
 
 Also, we can get the `web` service details
 

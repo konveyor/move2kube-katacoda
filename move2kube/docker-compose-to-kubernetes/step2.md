@@ -6,4 +6,4 @@ wget https://raw.githubusercontent.com/konveyor/move2kube-demos/main/samples/doc
 
 The downloaded sample Docker Compose file is `samples/docker-compose/docker-compose.yaml`{{open}}
 
-In the next step, we will translate this Docker Compose sample using Move2Kube and generate the target deployment artifacts.
+In the next step, we will transform this Docker Compose sample using Move2Kube and generate the target deployment artifacts.

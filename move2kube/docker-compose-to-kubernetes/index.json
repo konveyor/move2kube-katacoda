@@ -35,6 +35,11 @@
         "text": "step6.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "config.yaml", "target": "/root/"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
